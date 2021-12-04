@@ -1,0 +1,9 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+npm run build:format || (
+    echo '❌❌❌ Failed to make it pretty! ❌❌❌'
+    return false;
+)
+
+echo '✅✅✅ Everything went smoooooooothly ✅✅✅'
