@@ -1,6 +1,6 @@
 module.exports = function (eleventyConfig) {
     eleventyConfig.addWatchTarget("./src/styles/tailwind.css");
-    eleventyConfig.addPassthroughCopy("./src/styles/styles.css");
+    eleventyConfig.addPassthroughCopy("./src/images/");
     return {
         dir: {
             input: "src",
