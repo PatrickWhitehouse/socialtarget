@@ -1,14 +1,14 @@
 {
     "name": "socialtarget",
     "version": "1.0.0",
-    "description": "Socail Target website",
+    "description": "Social Target website",
     "scripts": {
         "clean": "rm -rf public",
-        "dev": "run-p clean dev:*",
-        "dev:tailwind": "npx tailwindcss --postcss -i ./src/styles/tailwind.css -o ./src/styles/styles.css --watch",
+        "dev": "NODE_ENV=development && run-p clean dev:*",
+        "dev:tailwind": "npx tailwindcss --postcss -i ./src/styles/tailwind.css -o ./public/styles/styles.css --watch",
         "dev:eleventy": "eleventy --serve",
         "build": "run-s clean build:format build:tailwind && eleventy",
-        "build:tailwind": "NODE_ENV=production npx tailwindcss --postcss -i ./src/styles/tailwind.css -o ./src/styles/styles.css ----minify",
+        "build:tailwind": "NODE_ENV=production npx tailwindcss --postcss -i ./src/styles/tailwind.css -o ./public/styles/styles.css --minify",
         "build:format": "prettier --write ./src",
         "prepare": "husky install"
     },
