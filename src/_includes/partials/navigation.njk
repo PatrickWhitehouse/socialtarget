@@ -1,21 +1,23 @@
-<nav class="py-2 container mx-auto">
-        {% if nav %}
-        <ul class="flex justify-end items-center">
-                <li class="mr-auto">
-                        <a href="/">
-                                <img src="/images/logo.png" alt="Social Target" width="350" height="50">
-                        </a>
-                </li>
-                {% for item in nav %}
-                {% if item.url === page.url %}
-                {% set current = "font-semibold" %}
-                {% else %}
-                {% set current = 'font-normal' %}
+<header class="bg-white">
+        <nav class="py-2 mb-2 container mx-auto ">
+                {% if nav %}
+                <ul class="flex justify-end items-center">
+                        <li class="mr-auto">
+                                <a href="/">
+                                        <img src="/images/logo.png" alt="Social Target" width="350" height="50">
+                                </a>
+                        </li>
+                        {% for item in nav %}
+                        {% if item.url === page.url %}
+                        {% set current = "font-semibold" %}
+                        {% else %}
+                        {% set current = 'font-normal' %}
+                        {% endif %}
+                        <li class="ml-12">
+                                <a class={{current}} href={{item.url}}>{{item.title | upper}}</a>
+                        </li>
+                        {% endfor %}
+                </ul>
                 {% endif %}
-                <li class="ml-12">
-                        <a class={{current}} href={{item.url}}>{{item.title | upper}}</a>
-                </li>
-                {% endfor %}
-        </ul>
-        {% endif %}
-</nav>
+        </nav>
+</header>

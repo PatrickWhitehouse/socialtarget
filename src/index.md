@@ -2,6 +2,6 @@
 layout: layouts/base
 ---
 
-# Hello World
+# Social media management, &amp; content creation that hit the bullseye.
 
-## Welcome.
+## FREELANCE SOCIAL MEDIA CONSULTANT
