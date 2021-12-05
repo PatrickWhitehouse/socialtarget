@@ -15,6 +15,13 @@
   flex: 1 1 50%;
 }
 
-.hero__image {
+.hero--two .hero__image {
   flex-grow: 1;
+}
+
+.wave-bg {
+  background-image: url("/images/wave.svg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
