@@ -4,3 +4,4 @@ console.log(
   `%cHere's a random emoji my guy. ${randomEmoji}`,
   "color:salmon;font-size:40px"
 );
+console.log(`%cSite built by @patrickdoesweb`, "color:lavendar;font-size:40px");
