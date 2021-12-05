@@ -7,9 +7,9 @@
     "dev": "NODE_ENV=development && run-p clean dev:*",
     "dev:tailwind": "npx tailwindcss --postcss -i ./src/styles/tailwind.css -o ./public/styles/styles.css --watch",
     "dev:eleventy": "eleventy --serve",
+    "format": "prettier --write ./src",
     "build": "run-s clean build:format build:tailwind && eleventy",
     "build:tailwind": "NODE_ENV=production npx tailwindcss --postcss -i ./src/styles/tailwind.css -o ./public/styles/styles.css",
-    "build:format": "prettier --write ./src",
     "prepare": "husky install"
   },
   "keywords": [],
