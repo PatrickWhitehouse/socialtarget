@@ -1,4 +1,4 @@
-<nav>
+<nav class="py-2 container mx-auto">
         {% if nav %}
         <ul class="flex justify-end items-center">
                 <li class="mr-auto">
@@ -12,7 +12,7 @@
                 {% else %}
                 {% set current = 'font-normal' %}
                 {% endif %}
-                <li class="ml-4">
+                <li class="ml-12">
                         <a class={{current}} href={{item.url}}>{{item.title | upper}}</a>
                 </li>
                 {% endfor %}
