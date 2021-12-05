@@ -1,1 +1,1 @@
-console.log("%cSocial Target!!! 🎯", "color:salmon");
+console.log("%cDon't read my console ;]", "color:salmon;font-size:40px");
