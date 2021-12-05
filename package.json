@@ -4,12 +4,13 @@
   "description": "Social Target website",
   "scripts": {
     "clean": "rm -rf public",
-    "dev": "NODE_ENV=development && run-p clean dev:*",
+    "dev": "NODE_ENV=development && run-p clean dev:* js",
     "dev:tailwind": "npx tailwindcss --postcss -i ./src/styles/tailwind.css -o ./public/styles/styles.css --watch",
     "dev:eleventy": "eleventy --serve",
     "format": "prettier --write ./src",
     "build": "run-s clean build:tailwind && eleventy",
     "build:tailwind": "NODE_ENV=production npx tailwindcss --postcss -i ./src/styles/tailwind.css -o ./public/styles/styles.css",
+    "js": "npx rollup src/scripts/main.js --file src/scripts/bundle.js --format cjs --watch",
     "prepare": "husky install"
   },
   "keywords": [],
@@ -23,6 +24,7 @@
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.4",
     "prettier": "^2.5.1",
+    "rollup": "^2.60.2",
     "tailwindcss": "^2.2.19"
   }
 }
