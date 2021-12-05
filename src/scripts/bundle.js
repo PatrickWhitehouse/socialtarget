@@ -1,3 +1,3 @@
 'use strict';
 
-console.log("Social Target");
+console.log("%cSocial Target!!! 🎯", "color:salmon");
