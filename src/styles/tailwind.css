@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .hero {
-  min-height: 33vh;
+  min-height: 45vh;
 }
 
 .hero--two {
@@ -21,6 +21,13 @@
 
 .wave-bg {
   background-image: url("/images/wave.svg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.shape-bg {
+  background-image: url("/images/shapes.svg");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
