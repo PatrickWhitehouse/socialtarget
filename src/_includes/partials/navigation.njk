@@ -1,0 +1,23 @@
+<header class="bg-white">
+        <nav class="py-2 container mx-auto ">
+                {% if nav %}
+                <ul class="flex justify-end items-center">
+                        <li class="mr-auto">
+                                <a href="/">
+                                        <img src="/images/logo.svg" alt="Social Target logo" width="220" height="50">
+                                </a>
+                        </li>
+                        {% for item in nav %}
+                        {% if item.url === page.url %}
+                        {% set current = "font-semibold" %}
+                        {% else %}
+                        {% set current = 'font-normal' %}
+                        {% endif %}
+                        <li class="ml-12">
+                                <a class={{current}} href={{item.url}}>{{item.title | upper}}</a>
+                        </li>
+                        {% endfor %}
+                </ul>
+                {% endif %}
+        </nav>
+</header>
