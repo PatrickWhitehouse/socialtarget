@@ -1,4 +1,6 @@
 node_modules
 public
 src/styles/styles.css
+src/scripts/bundle.js
 .DS_Store
+.idea
