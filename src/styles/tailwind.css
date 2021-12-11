@@ -43,21 +43,21 @@
 
 .wave-bg {
   background-image: url("/images/wave.svg");
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .shape-bg {
-  background-image: url("/images/shapes.svg");
-  background-size: 100%;
+  background-image: url("/images/shapes-2.svg");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .bubble-bg {
   background-image: url("/images/bubble.svg");
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }

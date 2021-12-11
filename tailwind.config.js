@@ -10,6 +10,7 @@ module.exports = {
         "brand-darkgrey": "#1D1F1F",
         "brand-camel": "#F5E9E2",
         "brand-rose": "#C78283",
+        "brand-baby": "#F3D9DC",
       },
       fontFamily: {
         sans: ["Outfit", ...defaultTheme.fontFamily.sans],
