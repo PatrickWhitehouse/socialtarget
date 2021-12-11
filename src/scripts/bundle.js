@@ -405,5 +405,11 @@
   var randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
   console.log(`%cHere's a random emoji my guy. ${randomEmoji}`, "color:salmon;font-size:40px");
   console.log(`%cSite built by @patrickdoesweb`, "color:lavendar;font-size:40px");
-  import_aos.default.init();
+  import_aos.default.init({
+    disable: "phone",
+    mirror: false,
+    once: true,
+    offset: 0,
+    duration: 850
+  });
 })();

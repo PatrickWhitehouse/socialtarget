@@ -7,4 +7,10 @@ console.log(
 );
 console.log(`%cSite built by @patrickdoesweb`, "color:lavendar;font-size:40px");
 
-AOS.init();
+AOS.init({
+  disable: "phone",
+  mirror: false,
+  once: true,
+  offset: 0,
+  duration: 850,
+});
