@@ -1,22 +1,29 @@
 <header class="bg-white">
         <nav class="py-2 container mx-auto main-nav">
                 {% if nav %}
-                <ul class="flex justify-end items-center">
+                <ul class="flex flex-wrap lg:flex-nowrap justify-end items-center">
                         <li class="mr-auto">
                                 <a href="/">
                                         <img src="/images/logo.svg" alt="Social Target logo" width="220" height="50">
                                 </a>
                         </li>
-                        {% for item in nav %}
-                        {% if item.url === page.url %}
-                        {% set current = "font-semibold" %}
-                        {% else %}
-                        {% set current = 'font-normal' %}
-                        {% endif %}
-                        <li class="ml-12">
-                                <a class={{current}} href={{item.url}}>{{item.title | upper}}</a>
+                        <li class="hamburger ml-auto lg:hidden">
+                                <button>
+                                        hamburger
+                                </button>
                         </li>
-                        {% endfor %}
+                        <ul class="main-nav-el w-full block hidden lg:block lg:ml-auto lg:w-auto">
+                                {% for item in nav %}
+                                {% if item.url === page.url %}
+                                {% set current = "font-semibold" %}
+                                {% else %}
+                                {% set current = 'font-normal' %}
+                                {% endif %}
+                                <li class="ml-12 inline-block">
+                                        <a class={{current}} href={{item.url}}>{{item.title | upper}}</a>
+                                </li>
+                                {% endfor %}
+                        </ul>
                 </ul>
                 {% endif %}
         </nav>
