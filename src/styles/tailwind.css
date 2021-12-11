@@ -32,3 +32,10 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.bubble-bg {
+  background-image: url("/images/bubble.svg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
