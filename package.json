@@ -27,5 +27,8 @@
     "postcss": "^8.4.4",
     "prettier": "^2.5.1",
     "tailwindcss": "^2.2.19"
+  },
+  "dependencies": {
+    "aos": "^2.3.4"
   }
 }
