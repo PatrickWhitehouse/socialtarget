@@ -11,7 +11,7 @@ console.log(`%cSite built by @patrickdoesweb`, "color:lavendar;font-size:40px");
 
 // AOS Lib
 AOS.init({
-  disable: "phone",
+  disable: false,
   mirror: false,
   once: true,
   offset: 0,
