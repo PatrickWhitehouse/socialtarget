@@ -6,6 +6,14 @@ meta:
   with 11ty, powered by Vite with Tailwind CSS and Alpine.js.'
 ---
 
-<div>
-  Home
+<div class="hero">
+  <div class="hero-content">
+    <div>
+      <h1>Social media management, & content creation that hit the bullseye.</h1>
+      <h2 class="uppercase">Freelance social media consultant</h2>
+    </div>
+    <div>
+      <img src="/images/dartboard.png" width="531" height="531">
+    </div>
+  </div>
 </div>
