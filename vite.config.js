@@ -1,19 +1,10 @@
 import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
 
-const { resolve } = require('path');
-
 export default defineConfig({
   root: '_site',
   build: {
     outDir: '../dist',
-    rollupOptions: {
-      input: {
-        404: resolve(__dirname, '_site', '404.html'),
-        main: resolve(__dirname, '_site', 'index.html'),
-        about: resolve(__dirname, '_site', 'about', 'index.html'),
-      },
-    },
     emptyOutDir: true,
   },
   plugins: [
@@ -25,9 +16,9 @@ export default defineConfig({
         'apple-touch-icon.png',
       ],
       manifest: {
-        name: '11st-Starter-Kit',
-        short_name: '11st-Starter-Kit',
-        description: '11ty, powered by Vite with Tailwind CSS and Alpine.js.',
+        name: 'Social Target',
+        short_name: 'Social Target',
+        description: 'Social Target, freelance social media consultant.',
         scope: '/',
         start_url: '/',
         display: 'standalone',

@@ -8,6 +8,8 @@ Alpine.start();
 
 const env = document.querySelector('body').dataset.env;
 
+console.log('yeah baby yeah.');
+
 // Check that service workers are supported
 if ('serviceWorker' in navigator && env === 'production') {
   // use the window load event to keep the page load performant
