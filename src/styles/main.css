@@ -2,8 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Desktop styles */
+/* Variables */
+:root {
+  --color-brand-purple: #F5F3FB;
+  --color-brand-blue: #F3F9FB;
+}
 
+/* Typography */
+
+h1 {
+  @apply text-7xl
+}
+
+/* Components */
 .hero {
   background-repeat: no-repeat;
   background-size: 100%;
@@ -12,7 +23,19 @@
 .hero-content {
   align-items: center;
   display: flex;
-  @apply container mx-auto;
+  @apply container mx-auto h-full;
+}
+
+.cards {
+  @apply grid grid-cols-3 gap-10;
+}
+
+.card {
+  @apply flex flex-col justify-center text-center;
+}
+
+footer {
+  background-color: var(--color-brand-purple);
 }
 
 @media screen and (min-width: 1024px) {
