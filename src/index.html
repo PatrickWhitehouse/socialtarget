@@ -6,10 +6,10 @@ meta:
   with 11ty, powered by Vite with Tailwind CSS and Alpine.js.'
 ---
 
-<div class="hero" style="background-image: url('images/pink-squiggle.svg')">
+<div class="hero" style="background-image: url('/images/pink-squiggle.svg')">
   <div class="hero-content">
     <div class="flex-shrink">
-      <h1 class="whitespace-pre-line">
+      <h1 class="whitespace-pre-line font-semibold leading-snug">
         Social media management, & content creation that hit the bullseye.
       </h1>
       <h2 class="mt-2 text-2xl uppercase">Freelance social media consultant</h2>
@@ -22,33 +22,38 @@ meta:
 <div class="container mx-auto">
   <div class="cards">
     <div class="card">
-      <h3>Social Media Management</h3>
-      <p>
+      <img src="/images/key.png" alt="Key" class="w-64" />
+      <h3 class="text-3xl">Social Media Management</h3>
+      <p class="mt-6 text-2xl">
         The key to a successful social media account is ensuring they are
         managed daily. That’s where we come in.
       </p>
-      <a href="/">Find out more</a>
+      <a href="/" class="button primary-button">Find out more</a>
     </div>
     <div class="card">
-      <h3>Social Media Management</h3>
-      <p>
+      <img src="/images/brush.png" alt="Brush" class="w-64" />
+      <h3 class="text-3xl">Social Media Management</h3>
+      <p class="mt-6 text-2xl">
         The key to a successful social media account is ensuring they are
         managed daily. That’s where we come in.
       </p>
-      <a href="/">Find out more</a>
+      <a href="/" class="button primary-button">Find out more</a>
     </div>
     <div class="card">
-      <h3>Social Media Management</h3>
-      <p>
+      <img src="/images/computer.png" alt="Computer" class="w-64" />
+      <h3 class="text-3xl">Social Media Management</h3>
+      <p class="mt-6 text-2xl">
         The key to a successful social media account is ensuring they are
         managed daily. That’s where we come in.
       </p>
-      <a href="/">Find out more</a>
+      <a href="/" class="button primary-button">Find out more</a>
     </div>
   </div>
   <div class="mt-12">
-    <h3 class="text-4xl">A little about me<span>.</span></h3>
-    <p class="mt-4 text-2xl leading-relaxed">
+    <h3 class="text-6xl font-semibold">
+      A little about me<span class="is-peach">.</span>
+    </h3>
+    <p class="mt-4 text-4xl leading-relaxed">
       Hi I’m Beth, a social media consultant based in Manchester, UK. I have
       been working in social media marketing for the last five years, and have
       gained a tonne of skills and knowledge along the way. Adapting from
@@ -59,8 +64,16 @@ meta:
   </div>
 </div>
 <div class="cta">
-  <div class="container mx-auto">
-    <span>Let’s have a chinwag!</span>
-    <a href="/">Contact me</a>
+  <div
+    class="container mx-auto flex h-full flex-col items-center justify-center text-center"
+  >
+    <span class="text-6xl font-semibold">Let’s have a chinwag!</span>
+    <a href="/" class="button primary-button">Contact me</a>
   </div>
+</div>
+<div class="container mx-auto mt-8">
+  <h3 class="text-6xl font-semibold leading-snug">
+    A handful of businesses I have worked my
+    <span class="is-peach">magic</span> on throughout my career.
+  </h3>
 </div>
